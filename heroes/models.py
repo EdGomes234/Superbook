@@ -1,5 +1,6 @@
 
 from django.db import models
+from django.views.generic import ListView
 
 class Hero(models.Model):
     codinome = models.CharField(max_length=50, unique=True)
@@ -11,4 +12,7 @@ class Hero(models.Model):
 
     def __str__(self):
         return self.codinome
+
+
+    
 
