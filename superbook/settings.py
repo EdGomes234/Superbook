@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'django.contrib.admin', #app da interface administrativa
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Apps do SuperBook
+    # EDGAR GOMES OLIVEIRA
+
     'heroes',
     'posts',
+    'villains',
 ]
 
 

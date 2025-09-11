@@ -1,11 +1,11 @@
 # EDGAR GOMES OLIVEIRA
 
-
 from django.contrib import admin
-from .models import Hero
-@admin.register(Hero)
+from .models import Villain
+
+@admin.register(Villain)
 # Register your models here.
-class HeroAdmin(admin.ModelAdmin):
+class VillainAdmin(admin.ModelAdmin):
     list_display = ['codinome', 'nome_real', 'poder_principal', 'cidade', 'criado_em', 'email_contato']
     list_filter = ['cidade']
     search_fields = ['codinome', 'nome_real', 'cidade']
@@ -15,7 +15,7 @@ class HeroAdmin(admin.ModelAdmin):
             'fields': ('codinome', 'nome_real')
         }),
         ('Informações Gerais', {
-            'fields': ('poder_principal', 'cidade', 'historia', 'email_contato')
+            'fields': ('poder_principal', 'cidade', 'historia')
         }),
         ('Dados de Registro', {
             'fields': ('criado_em',)
@@ -23,3 +23,4 @@ class HeroAdmin(admin.ModelAdmin):
     )
     
     readonly_fields = ['criado_em']
+
