@@ -10,3 +10,4 @@ urlpatterns = [
     path('<int:pk>/excluir/', PostDeleteView.as_view(), name='excluir_post'),
     path('<int:pk>/', detalhe_post, name='detalhe_post'),
 ]
+#EDGAR GOMES OLIVEIRA

@@ -9,3 +9,5 @@ class Comentario(models.Model):
 
     def __str__(self):
         return f'Comentário em {self.post} - {self.texto[:30]}...'
+
+#EDGAR GOMES OLIVEIRA

@@ -9,3 +9,4 @@ class ComentarioForm(forms.ModelForm):
         labels = {'texto': 'Comentário'}
         widgets = {'texto': forms.Textarea(attrs={'rows': 3})}
 
+#EDGAR GOMES OLIVEIRA

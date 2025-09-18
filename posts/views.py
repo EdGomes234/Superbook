@@ -31,6 +31,8 @@ class PostDeleteView(DeleteView):
     template_name = 'posts/confirmar_exclusao.html'
     success_url = reverse_lazy('lista_posts')
 
+#EDGAR GOMES OLIVEIRA
+
 def detalhe_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     comentarios = post.comentarios.all()
